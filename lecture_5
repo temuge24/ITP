@@ -1,0 +1,47 @@
+#must 1
+# numbers =[]
+# n = int(input("too oruul: "))
+# for i in range(n):
+#     q = int(input("q = "))
+#     if(q%7==1 or q%7==2 or q%7==5):
+#         numbers.append(q)
+# print(numbers)
+#must 2
+"""
+numbers =[]
+n = int(input("too oruul: "))
+for i in range(n):
+    q = int(input("q = "))
+    if q%2==0 :
+        if q/2 %2==1:
+            numbers.append(q)
+print(numbers)
+"""
+#should 1
+numbers =[]
+max = 0
+min = 110000000000000
+min_1 = 1000000000000
+n = int(input("too oruul: "))
+for i in range(n):
+    q = int(input("q = "))
+    numbers.append(q)
+for i in range(n):
+    if numbers[i] > max:
+        max = numbers[i]
+    else:
+        continue
+for i in range(n):
+    if numbers[i]<min:
+        min =numbers[i]
+    else: 
+        continue
+for i in range(n):
+    if i%2==0:
+        if numbers[i]<min_1:
+            min_1 =numbers[i+2]
+        else: 
+            continue
+print(max)
+print(min)
+print(min_1)
