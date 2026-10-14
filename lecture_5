@@ -59,3 +59,19 @@ while j<n:
         anhnii_toonuud.append(j)   
     j+=1
 print("anhii toonuud: ", anhnii_toonuud)
+#challenge 1
+n = int(input("too oruul"))
+j = 3
+huvaagchid = []
+while j<n:
+    is_prime = True
+    for i in range(2, j):
+        if j%i==0: 
+            is_prime = False
+            break
+    if is_prime:   
+        if n%j ==0:
+            huvaagchid.append(j)
+    j+=1
+
+print("anhii toonuud: ", huvaagchid)
