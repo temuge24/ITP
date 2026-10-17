@@ -53,13 +53,12 @@ if is_prime(23):
 else:
     print("anhnii too bish")
 #bodlogo 9
-
 def print_even(a, b):
-    a =[]
+    even_numbers =[]
     for i in range(a, b):
         if i%2==0:
-            a.append(i)
+            even_numbers.append(i)
         else:
             continue
-    print(a)
+    print(even_numbers)
 print_even(3, 12)
